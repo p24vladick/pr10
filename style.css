@@ -1,4 +1,4 @@
-/* Базові скидання */
+
 
 * {
     margin: 0;
@@ -11,9 +11,7 @@ body {
     background-color: #141416;
     color: #ffffff;
 }
-
-
-/* Макет Дашборду */
+
 
 .dashboard-layout {
     display: flex;
@@ -21,9 +19,7 @@ body {
 }
 
 
-/* =========================================
-   БОКОВА ПАНЕЛЬ (Sidebar - Десктоп)
-   ========================================= */
+/* Sidebar */
 
 .sidebar {
     width: 250px;
@@ -57,7 +53,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    /* Відступ між іконкою і текстом */
+   
 }
 
 .sidebar-nav a i {
@@ -71,7 +67,7 @@ body {
 }
 
 
-/* Main Wrapper */
+
 
 .main-wrapper {
     flex: 1;
@@ -80,9 +76,7 @@ body {
 }
 
 
-/* =========================================
-   ВЕРХНЯ ПАНЕЛЬ (Topbar)
-   ========================================= */
+/* Topbar */
 
 .topbar {
     height: 80px;
@@ -120,11 +114,7 @@ body {
     background-color: #6c5dd3;
     border-radius: 50%;
 }
-
-
-/* =========================================
-   ОСНОВНИЙ КОНТЕНТ (Content)
-   ========================================= */
+
 
 .content {
     padding: 40px;
@@ -170,7 +160,7 @@ body {
 }
 
 
-/* Crypto Grid (Картки криптовалют) */
+/* Crypto Grid */
 
 .crypto-grid {
     display: grid;
@@ -250,9 +240,7 @@ body {
 }
 
 
-/* =========================================
-   АДАПТИВНІСТЬ (Медіа-запити)
-   ========================================= */
+
 
 
 /* Планшет (до 1024px) */
@@ -269,10 +257,9 @@ body {
 @media (max-width: 768px) {
     .dashboard-layout {
         flex-direction: column;
-        padding-bottom: 70px;
-        /* Відступ знизу, щоб контент не ховався за нижнім меню */
+        padding-bottom: 70px;
     }
-    /* Перетворюємо Sidebar на нижнє меню (Bottom Navigation) */
+ 
     .sidebar {
         position: fixed;
         bottom: 0;
@@ -287,11 +274,11 @@ body {
         flex-direction: row;
         justify-content: center;
     }
-    /* Ховаємо логотип на мобільному */
+    
     .logo {
         display: none;
     }
-    /* Горизонтальне меню для мобільних */
+    
     .sidebar-nav {
         display: flex;
         flex-direction: row;
@@ -306,7 +293,7 @@ body {
         padding: 8px;
         border-radius: 8px;
         background-color: transparent;
-        /* Скидаємо фон на мобільному */
+       
     }
     .sidebar-nav a i {
         font-size: 24px;
@@ -317,7 +304,7 @@ body {
         background-color: transparent;
         color: #6c5dd3;
     }
-    /* Адаптація верхньої панелі */
+    
     .topbar {
         padding: 0 20px;
         height: 70px;
@@ -325,22 +312,22 @@ body {
     }
     .search-bar {
         flex: 1;
-        /* Поле пошуку займає вільний простір */
+        
     }
     .search-bar input {
         width: 100%;
     }
-    /* Ховаємо ім'я користувача, залишаємо лише аватарку */
+   
     .user-profile .user-info {
         display: none;
     }
-    /* Контент в одну колонку */
+    
     .content {
         padding: 20px;
     }
     .balance-amount {
         font-size: 28px;
-        /* Трохи зменшуємо шрифт балансу */
+       
     }
     .crypto-grid {
         grid-template-columns: 1fr;
