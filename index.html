@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Dashboard - RecehTok</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-layout">
+
+        <aside class="sidebar">
+            <div class="logo">RecehTok.</div>
+            <nav class="sidebar-nav">
+                <a href="#" class="active"><i class="ri-dashboard-line"></i> <span>Дашборд</span></a>
+                <a href="#"><i class="ri-bar-chart-grouped-line"></i> <span>Ринки</span></a>
+                <a href="#"><i class="ri-wallet-3-line"></i> <span>Гаманець</span></a>
+                <a href="#"><i class="ri-exchange-dollar-line"></i> <span>Транзакції</span></a>
+                <a href="#"><i class="ri-settings-4-line"></i> <span>Налаштування</span></a>
+            </nav>
+        </aside>
+
+        <div class="main-wrapper">
+
+            <header class="topbar">
+                <div class="search-bar">
+                    <input type="text" placeholder="Пошук монет...">
+                </div>
+                <div class="user-profile">
+                    <div class="user-info">Влад Богун</div>
+                    <div class="avatar"></div>
+                </div>
+            </header>
+
+            <main class="content">
+                <div class="balance-section">
+                    <h2>Загальний баланс портфеля</h2>
+                    <div class="balance-amount">$ 12,431.89 <span class="badge positive">+4.2%</span></div>
+                </div>
+
+                <section class="crypto-grid">
+                    <div class="crypto-card">
+                        <div class="crypto-header">
+                            <div class="crypto-name">Bitcoin <span>BTC</span></div>
+                        </div>
+                        <div class="crypto-price">$ 64,230.00</div>
+                        <div class="crypto-change positive">+ 1.25%</div>
+                    </div>
+
+                    <div class="crypto-card">
+                        <div class="crypto-header">
+                            <div class="crypto-name">Ethereum <span>ETH</span></div>
+                        </div>
+                        <div class="crypto-price">$ 3,450.12</div>
+                        <div class="crypto-change negative">- 0.85%</div>
+                    </div>
+
+                    <div class="crypto-card">
+                        <div class="crypto-header">
+                            <div class="crypto-name">Binance <span>BNB</span></div>
+                        </div>
+                        <div class="crypto-price">$ 420.50</div>
+                        <div class="crypto-change positive">+ 3.12%</div>
+                    </div>
+                </section>
+
+                <section class="recent-transactions">
+                    <h3>Останні транзакції</h3>
+                    <div class="transaction-item">
+                        <div class="tx-info">Купівля BTC</div>
+                        <div class="tx-date">Сьогодні, 14:30</div>
+                        <div class="tx-amount positive">+ 0.025 BTC</div>
+                    </div>
+                    <div class="transaction-item">
+                        <div class="tx-info">Продаж ETH</div>
+                        <div class="tx-date">Вчора, 09:15</div>
+                        <div class="tx-amount negative">- 1.500 ETH</div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+    </div>
+</body>
+
+</html>
